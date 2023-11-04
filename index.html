@@ -1,3 +1,5 @@
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places,geometry"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpeedUp Now</title>
 </head>
-
 <body>
-    <iframe src="https://storage.googleapis.com/maps-solutions-njao9560dx/commutes/3ruz/commutes.html"
+    <label for="origin">Origin:</label>
+    <input type="text" id="origin" placeholder="Enter origin address">
+  
+    <label for="speed">Average Speed (mph):</label>
+    <input type="range" id="speed" min="1" max="100" step="1" value="60">
+    <span id="speed-display">60 mph</span>
+  
+    <button onclick="calculateRoute()">Calculate Route</button>
+  
+    <div id="route-length"></div>
+    <div id="normal-travel-time"></div>
+    <div id="eta-difference"></div>
+  
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5uZqVWAFjeossGKpDbB7g6kjK7Mfjb60&libraries=places"></script>
+  </body>
+
+    <!--
+        <iframe src="https://storage.googleapis.com/maps-solutions-njao9560dx/commutes/3ruz/commutes.html"
   width="100%" height="100%"
   style="border:0;"
   loading="lazy">
 </iframe>
-</body>
+-->
 </html>
