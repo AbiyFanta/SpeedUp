@@ -42,8 +42,10 @@ body {
 }
 
 .same-size-image {
-    width: 200px;
-    height: 200px;
+    width: 10vw;
+    min-width:150px;
+    max-width: 300px;
+    height: auto;
 }
 
 .image-container {
@@ -85,7 +87,17 @@ body {
     min-width:50px;
     width:4vw;
     height:auto;
+    max-width: 200px;
 }
 .logo-container{
     margin-bottom:15px;
+}
+#gif{
+    width: 13vw;
+    height:14vw;
+    min-width:150px;
+    max-width:300px;
+    min-height:150px;
+    max-height:300px;
+    
 }
