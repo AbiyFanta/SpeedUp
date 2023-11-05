@@ -2,7 +2,7 @@ body {
     background-color: #E8E8E4;
     height:100vh;
     margin:0%;
-font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 #logo{
@@ -11,7 +11,9 @@ font-family: 'Inter', sans-serif;
     max-width: 300px;
     height: auto;
     display:flex;
+
 }
+
 
 
 #footer,#travelTime{
@@ -56,6 +58,11 @@ font-family: 'Inter', sans-serif;
 .image-text {
     margin: 1px 0;
     padding: 0px;
+    font-weight:bold;
+}
+
+.role{
+    font-style:italic;
 }
 
 @media screen and (min-width: 601px) {
