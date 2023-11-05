@@ -1,7 +1,6 @@
 # SpeedUp
 
-Website showing how much time you save or add going under or over the speed limit (drive safe!)
-
+Pushing the limits of time efficiency. A website calculating time saved by driving faster.
 ## Getting Started
 
 Open the [Netlify](https://ashsensei.github.io/Whats-That-Song/). Then enter a starting address and destination to calculate.
