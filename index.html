@@ -4,13 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpeedUp Now</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5uZqVWAFjeossGKpDbB7g6kjK7Mfjb60&libraries=places"></script>
 </head>
-
 <body>
-    <iframe src="https://storage.googleapis.com/maps-solutions-njao9560dx/commutes/3ruz/commutes.html"
-  width="100%" height="100%"
-  style="border:0;"
-  loading="lazy">
-</iframe>
+    <div class="container d-flex flex-column align-items-center" >
+        <img id="logo" src="assets/speeduplogo.png" alt="SpeedUp Logo">
+        <br>
+        
+        
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Enter Starting Point:</h2>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="origin" placeholder="Enter Starting Point Address">
+                <label for="origin">Enter Starting Point Address</label>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col">
+                <h2>Enter Destination:</h2>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                <input type="text" class="form-control" id="destination" placeholder="Enter destination address">
+                <label for="destination">Destination (UC Davis by default)</label>
+                </div>
+                <br>
+            </div>
+        </div>
+        
+        <div class="row mb-3">
+            <div class="col">
+                <h2 id="normal-travel-time"></h2> 
+              </div>
+              <div class="col">
+                <h2 id="route-length"></h2> 
+              </div>
+        </div>
+        <br>
+        <!--<div class="row mb-3">
+            <iframe src="https://storage.googleapis.com/maps-solutions-njao9560dx/commutes/3ruz/commutes.html" width="600" height="450" style="border:0;" loading="lazy"></iframe>
+        </div>-->
+
+        <br>
+        <br>
+        <div class="row flex-column align-items-center mb-3">
+           <label for="customRange1" class="form-label text-center about">Speed Slider</label>
+           <input type="range" class="form-range" id="customRange1">
+           <br>
+           <div class ="d-flex flex-column align-items-center">
+                <button type="button" class="btn btn-primary mb-5" onclick="calculateRoute()"">Calculate Route</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="travelTime" class="row flex-column align-items-center">
+        <h1 class="text-center">New Travel Time: _minutes</h1>
+        <h3 class="text-center">You saved _ minutes</h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row flex-column align-items-center">
+        <h5 class="text-center">Disclaimer: We do not condone reckless driving. <br>
+            This is strictly for educational and entertainment purposes.</h5>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <hr class ="bolder">
+        <div id = "footer" class="row">
+            <div class="col">
+                <h3>SpeedUp</h3>
+            </div>
+            <div class="col text-end">
+                <a class ="about" href="about.html">About</a>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    
 </body>
 </html>
