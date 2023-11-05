@@ -15,7 +15,6 @@ body {
 }
 
 
-
 #footer,#travelTime{
         padding-top: 20px;
     padding-bottom: 20px;
@@ -67,7 +66,7 @@ body {
     font-style:italic;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 768px) {
     .label{
         white-space: nowrap;
         overflow: hidden;
@@ -77,7 +76,7 @@ body {
     }
   }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .label {
         font-size: 11px;
     }
