@@ -1,4 +1,4 @@
-# Whats-That-Song
+# SpeedUp
 
 Website showing how much time you save or add going under or over the speed limit (drive safe!)
 
