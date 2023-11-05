@@ -56,14 +56,15 @@ function calculateRoute() {
       if (etaDifference > 0){
         travelTime.style.backgroundColor = '#BB1E10';
         document.getElementById('eta-difference').innerHTML = 'You added ' + (60*etaDifference).toFixed(2) + ' minutes.';
-      } else if(etaDifference == 0) {
+      } else if(etaDifference == 0) {                     //Added Yellow Box if there is no time saved or added
         travelTime.style.backgroundColor = '#F7B500';
         document.getElementById('eta-difference').innerHTML = 'You made no change.';
       } else {
-        //normal procedure if chose a faster speed
+        //normal procedure if chose a faster speed (green box)
         travelTime.style.backgroundColor = '#00AF4F'; 
         document.getElementById('eta-difference').innerHTML = 'You saved ' + (-1*60*etaDifference).toFixed(2) + ' minutes!';
       }
+      // Remove the 'hidden' class to show the data
       document.getElementById('travelTime').classList.remove('hidden');
       
     } else {
@@ -73,11 +74,11 @@ function calculateRoute() {
       document.getElementById('eta-difference').innerHTML = '';
     }
 
-    // Remove the 'hidden' class to show the element
+    
   });
 }
 
-
+// function to display the speed value of the slider
 var speedSlider = function(){
   var slider = document.getElementById('speed');
   slider.addEventListener('input', function() {
@@ -87,6 +88,6 @@ var speedSlider = function(){
   
 }
 
-
+// run the function!
 speedSlider();
 
