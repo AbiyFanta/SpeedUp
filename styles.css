@@ -1,3 +1,4 @@
+/*Background Color & Website Font*/
 body {
     background-color: #E8E8E4;
     height:100vh;
@@ -5,6 +6,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+/*Sizing for Logo*/
 #logo{
     width: 60%;
     min-width: 200px;
@@ -14,24 +16,28 @@ body {
 
 }
 
-
+/*Footer Spacing*/
 #footer,#travelTime{
         padding-top: 20px;
     padding-bottom: 20px;
 }
 
+/*to make the hr thicker*/
 .bolder{
     border: 2px solid #000;
 }
 
+/*for about button*/
 .about{
     font-size:large;
 }
 
+/*To hide data before having it calculated*/
 .hidden{
     display:none;
 }
 
+/*align elements*/
 .left-align {
     margin-left: 20px; 
 }
@@ -40,6 +46,7 @@ body {
     margin-right: 5px; 
 }
 
+/*adjust the images to be roughly the same size*/
 .same-size-image {
     width: 10vw;
     min-width:150px;
@@ -47,6 +54,7 @@ body {
     height: auto;
 }
 
+/*create the centered items*/
 .image-container {
     display: flex;
     flex-direction: column;
@@ -56,16 +64,42 @@ body {
     height: 100%;
 }
 
+/*bold the title*/
 .image-text {
     margin: 1px 0;
     padding: 0px;
     font-weight:bold;
 }
 
+/*italicize the role*/
 .role{
     font-style:italic;
 }
 
+/*Logo Sizing*/
+.socialLogo{
+    min-width:50px;
+    width:4vw;
+    height:auto;
+    max-width: 200px;
+}
+/*Spacing for logos especially in mobile*/
+.logo-container{
+    margin-bottom:15px;
+}
+
+/*Kelvin's gif sizing*/
+#gif{
+    width: 13vw;
+    height:14vw;
+    min-width:150px;
+    max-width:300px;
+    min-height:150px;
+    max-height:300px;
+    
+}
+
+/*changes font size for the input fields based on the view width*/
 @media screen and (min-width: 768px) {
     .label{
         white-space: nowrap;
@@ -82,21 +116,3 @@ body {
     }
 }
 
-.socialLogo{
-    min-width:50px;
-    width:4vw;
-    height:auto;
-    max-width: 200px;
-}
-.logo-container{
-    margin-bottom:15px;
-}
-#gif{
-    width: 13vw;
-    height:14vw;
-    min-width:150px;
-    max-width:300px;
-    min-height:150px;
-    max-height:300px;
-    
-}
