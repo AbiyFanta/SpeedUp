@@ -49,7 +49,7 @@ function calculateRoute() {
       // Display the route length, normal travel time, and ETA difference on the web page
       document.getElementById('route-length').innerHTML = 'Route Length: ' + routeLengthInMiles.toFixed(2) + ' miles';
       document.getElementById('normal-travel-time').innerHTML = 'Normal Travel Time: ' + normalTravelTimeInHours.toFixed(2) + ' hours';
-      document.getElementById('eta-difference').innerHTML = 'ETA difference ' + -1*60*etaDifference.toFixed(2) + ' minutes';
+      document.getElementById('eta-difference').innerHTML = 'ETA difference ' + (-1*60*etaDifference).toFixed(2) + ' minutes';
     } else {
       // Handle error cases
       document.getElementById('route-length').innerHTML = 'Error: ' + status;
