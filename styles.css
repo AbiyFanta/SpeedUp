@@ -13,7 +13,7 @@ body {
 }
 
 #travelTime{
-    background-color: #00AF4F;
+    
 
     padding-top: 20px;
     padding-bottom: 20px;
@@ -32,3 +32,9 @@ body {
 .about{
     font-size:large;
 }
+
+.hidden{
+    display:none;
+}
+
+
