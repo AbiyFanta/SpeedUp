@@ -80,3 +80,12 @@ body {
         font-size: 11px;
     }
 }
+
+.socialLogo{
+    min-width:50px;
+    width:4vw;
+    height:auto;
+}
+.logo-container{
+    margin-bottom:15px;
+}
