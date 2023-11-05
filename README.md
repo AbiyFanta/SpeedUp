@@ -3,7 +3,7 @@
 Pushing the limits of time efficiency. A website calculating time saved by driving faster.
 ## Getting Started
 
-Open the [Netlify](https://ashsensei.github.io/Whats-That-Song/). Then enter a starting address and destination to calculate.
+Open the [Website](dainty-gecko-83e330.netlify.app/). Then enter a starting address and destination to calculate.
 
 ### Prerequisites
 
