@@ -15,7 +15,7 @@
     <title>SpeedUp Now</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    
+    <link rel="icon" href="assets/minilogo.png">
     
 </head>
 <body>
@@ -34,7 +34,8 @@
             <div class="col">
                 <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="origin" placeholder="Enter Starting Point Address (ex: Cosumnes River College)">
-                <label for="origin">Enter Starting Point Address (ex: Cosumnes River College)</label>
+                <label for="origin" class="label d-none d-md-block">Enter Starting Point Address (ex: Cosumnes River College)</label>
+                <label for="origin" class="label d-sm-block d-md-none">Enter Starting Point Address</label>
                 </div>
             </div>
             </div>
@@ -45,7 +46,8 @@
             <div class="col">
                 <div class="form-floating">
                 <input type="text" class="form-control" id="destination" placeholder="Enter destination address (ex: UC Davis)">
-                <label for="destination">Enter destination address (default: UC Davis)</label>
+                <label for="destination" class="label d-none d-md-block">Enter destination address (default: UC Davis)</label>
+                <label for="destination" class="label d-sm-block d-md-none">Enter destination address</label>
                 </div>
                 <br>
             </div>
@@ -68,7 +70,7 @@
         <br>
         <div class="row flex-column align-items-center mb-3">
            <label for="speed" class="form-label text-center about">Speed Slider</label>
-           <input type="range" class="form-range" min="1" max="120" step ="1" id="speed" value="60">
+           <input type="range" class="form-range" min="1" max="200" step ="1" id="speed" value="60">
            
            <span id="speed-display">60 mph</span>
            <br>
