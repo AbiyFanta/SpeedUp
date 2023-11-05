@@ -68,7 +68,7 @@ function calculateRoute() {
       
     } else {
       // Handle error cases
-      document.getElementById('route-length').innerHTML = 'Error: ' + status + 'Incorrect Address or not driveable (overseas)';
+      document.getElementById('route-length').innerHTML = 'Error: ' + status + '. Incorrect Address or not driveable (overseas)';
       document.getElementById('normal-travel-time').innerHTML = '';
       document.getElementById('eta-difference').innerHTML = '';
     }
