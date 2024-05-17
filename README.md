@@ -22,8 +22,8 @@ Responsive and works on all devices!
 
 ## Authors
 
-* **Ashton Simbol** - full-stack developer - [AshSensei](https://github.com/AshSensei)
 * **Abiy Fanta** - back-end developer - [AbiyFanta](https://github.com/AbiyFanta/)
+* **Ashton Simbol** - full-stack developer - [AshSensei](https://github.com/AshSensei)
 * **Kelvin Trinh** - front-end developer - [notcelsius](https://github.com/notcelsius)
 * **Sanim Ahmed** - graphic designer - [SanimAhmed](https://www.linkedin.com/in/sanim-ahmed/)
 
@@ -31,4 +31,3 @@ Responsive and works on all devices!
 
 * Utilized Google Maps API Documentation to implement the way we pulled the data using the addresses
 * Created for SacHacks Hackathon
-
